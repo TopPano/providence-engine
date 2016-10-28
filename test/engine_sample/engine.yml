@@ -5,11 +5,10 @@ components:
     build: ./components/comp1
     forward_to:
       - comp2
-      - comp3
   comp2:
     build: ./components/comp2
     forward_to: 
-      - comp4
+      - comp3
   comp3:
     build: ./components/comp3
     forward_to: 

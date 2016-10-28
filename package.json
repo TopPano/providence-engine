@@ -1,0 +1,23 @@
+{
+  "name": "providence-engine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.1.2",
+    "dockerode": "^2.3.1",
+    "fs": "0.0.1-security",
+    "mkdirp": "^0.5.1",
+    "nats": "^0.6.4",
+    "tar-fs": "^1.14.0",
+    "yamljs": "https://registry.npmjs.org/yamljs/-/yamljs-0.2.8.tgz"
+  }
+}

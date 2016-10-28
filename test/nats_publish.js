@@ -24,6 +24,10 @@ function readFiles(dirname, onFileContent, onError) {
           comp.data = data.toString();
           components.push(comp);
         }
+        else if(file.indexOf('base') !== -1){
+          result.base = {};
+          result.base.Dockerfile = data.toString();
+        }
         if (index === array.length-1) {
           result.components = components;
           onFileContent(result);
@@ -35,6 +39,8 @@ function readFiles(dirname, onFileContent, onError) {
 
 readFiles('./engine_sample/', 
   function(result){
-    nats.publish('foo', JSON.stringify(result));
+    nats.publish('foo', JSON.stringify({command: 'build', content: result}));
   }, 
   function(err){console.log(err);});
+
+nats.subscribe('controller', (msg) => {console.log(msg);});

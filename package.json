@@ -17,6 +17,9 @@
     "fs": "0.0.1-security",
     "mkdirp": "^0.5.1",
     "nats": "^0.6.4",
+    "node-etcd": "^5.0.3",
+    "randomstring": "^1.1.5",
+    "s3": "^4.4.0",
     "tar-fs": "^1.14.0",
     "yamljs": "https://registry.npmjs.org/yamljs/-/yamljs-0.2.8.tgz"
   }

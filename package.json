@@ -7,8 +7,11 @@
     "test": "test"
   },
   "scripts": {
+    "dev": "NODE_ENV='development' node app/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": "providence-engine",
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {

@@ -2,12 +2,12 @@
   "name": "providence-engine",
   "version": "1.0.0",
   "description": "",
-  "main": "app/index.js",
+  "main": "app/server.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "dev": "NODE_ENV='development' node app/index.js",
+    "dev": "NODE_ENV='development' node app/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "providence-engine",
@@ -16,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "async": "^2.1.2",
+    "aws-sdk": "https://registry.npmjs.org/aws-sdk/-/aws-sdk-2.0.31.tgz",
     "dockerode": "^2.3.1",
     "fs": "0.0.1-security",
     "mkdirp": "^0.5.1",
@@ -23,7 +24,10 @@
     "node-etcd": "^5.0.3",
     "randomstring": "^1.1.5",
     "s3": "^4.4.0",
+    "streamifier": "0.1.1",
+    "tar": "2.2.1",
     "tar-fs": "^1.14.0",
+    "winston": "2.3.0",
     "yamljs": "https://registry.npmjs.org/yamljs/-/yamljs-0.2.8.tgz"
   }
 }

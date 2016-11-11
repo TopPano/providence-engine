@@ -1,0 +1,15 @@
+version: '0.1'
+entry: comp1
+components:
+  base: provtest
+  comp1:
+    next:
+      - comp2
+  comp2:
+    next:
+      - comp3
+  comp3:
+    next:
+      - comp4
+  comp4:
+    next: SINK

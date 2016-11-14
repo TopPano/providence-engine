@@ -39,7 +39,7 @@ function readFiles(dirname, onFileContent, onError) {
 
 readFiles('./engine_sample/', 
   function(result){
-    nats.publish('foo', JSON.stringify({command: 'build', content: result}));
+    nats.publish('controller.engine', JSON.stringify({type: 'BUILD', content: result}));
   }, 
   function(err){console.log(err);});
 
